@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color:#000000;
+}
+
+body {
+    background-color: #ccd5de;
+    min-height: 100px;
+    max-height: fit-content;
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+.main-heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.addtodo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2),
+                -6px -6px 10px -1px rgba(245, 245, 245, 0.7);
+    width: fit-content;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.addtodo .collapsediv {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addtodo .collapsediv .title {
+    width: 20rem;
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.addtodo .title:focus {
+    border: 2px solid #000000;
+}
+
+
+.addtodo .collapsediv .task {
+    width: 20rem;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0.5rem;
+    resize: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addtodo .task:focus {
+    border: 2px solid #000000;
+}
+
+.addtodo .aftercollapse {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    align-items: center;
+}
+
+.addtodo .aftercollapse .collapsediv-heading {
+    font-size: 2rem;
+}
+
+.addtodo .aftercollapse .toggle-btn , .submit-btn{
+    width: 3rem;
+    height: 3rem;
+    background-color: #44474a;
+    border: none;
+    border-radius: 50%;
+}
+
+.addtodo .toggle-btn ion-icon , .submit-btn ion-icon{
+    color: #fff;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.open {
+    max-height: fit-content !important;
+    padding: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.change {
+    transform: rotate(45deg);
+}
+
+.done-btn, .remove-btn, .edit-btn, .save-btn{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    color: #44474a;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.taskdiv {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.2),
+                -6px -6px 10px -1px rgba(245, 245, 245, 0.7);
+    border-radius: 1rem;
+    margin-top: 3rem;
+    word-wrap: break-word;
+    border: #72777c 2px solid; 
+    transition: all linear 0.3s;    
+}
+
+.taskdiv .buttondiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskedit {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0.5rem;
+    resize: none;
+    border-radius: 10px;
+}
+
+.titleedit {
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
