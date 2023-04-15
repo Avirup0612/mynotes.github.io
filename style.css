@@ -8,6 +8,10 @@
     color:#000000;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     background-color: #ccd5de;
     min-height: 100px;
@@ -22,7 +26,6 @@ body {
     font-weight: bolder;
     font-size: 3.2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 
 .addtodo {
@@ -97,6 +100,11 @@ body {
     background-color: #44474a;
     border: none;
     border-radius: 50%;
+    transition: all linear 0.1s;
+}
+
+.toggle-btn:active , .submit-btn:active {
+    transform: scale(0.9);
 }
 
 .addtodo .toggle-btn ion-icon , .submit-btn ion-icon{
@@ -125,6 +133,19 @@ body {
     color: #44474a;
     font-weight: bolder;
     cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.done-btn:hover {
+    color: #00b300;
+}
+
+.edit-btn:hover {
+    color: #3333ff;
+}
+
+.remove-btn:hover {
+    color: #b30000;
 }
 
 .taskdiv {
@@ -159,6 +180,7 @@ body {
     padding: 0.5rem;
     resize: none;
     border-radius: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .titleedit {
@@ -170,4 +192,38 @@ body {
     border-radius: 10px;
     font-size: 1.5rem;
 }
+
+.titleedit:focus, .taskedit:focus {
+    border: 1px solid #000000;
+}
+
+@media (max-width:1200px){
+    html{
+     font-size: 90%;
+    }
+ }
+ 
+ @media (max-width:992px){
+     html{
+         font-size: 80%;
+        }
+ }
+ 
+ @media (max-width:780px){
+     html{
+         font-size: 70%;
+        }
+ }
+ 
+ @media (max-width:576px){
+     html{
+         font-size: 70%;
+        }
+ }
+ 
+ @media (max-width:400px) {
+     html {
+         font-size: 60%;
+     }
+ }
 
